@@ -18,10 +18,11 @@ html {
 body {
     font-family: Calibri, Arial, Helvetica, sans-serif;
     font-size: 100%;
-    max-width: 1200px;
+    max-width: 850px;
     margin: 0 auto;
     background-color: white;
     border: 1px solid green;
+    
 }
 
 /* the styles for the header */
@@ -36,17 +37,26 @@ header h1 {
 
 /* the styles for the main content */
 img {
-    max-width: 500px;
+    max-width: 250px;
     width: 100%;
     margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.classimageleft {
+    flex-direction: column-reverse;
 }
 
 p {
     margin: 1em;
+    flex: none;
 }
 
 div {
     margin-bottom: 50px;
+    flex: content;
 }
 
 /* the styles for the footer */
